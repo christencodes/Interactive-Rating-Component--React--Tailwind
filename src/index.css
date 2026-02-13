@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --alabaster-white: #fff;
+  --midnight-black: #000;
+  --grey950: #131518;
+  --grey900: #262e38;
+  --grey500: #969fad;
+  --orange500: #fc7614;
+
+  --background-image-dark-fade: linear-gradient(to bottom, #232a34, #181e27);
+
+  --font-overpass: "Overpass", sans-serif;
+}
+
+body,
+html,
+#root {
+  @apply bg-black;
+}
+
+#root {
+  @apply flex flex-col h-screen items-center justify-center;
+}
+
+.selected {
+  @apply bg-(--alabaster-white) text-(--midnight-black);
+}
