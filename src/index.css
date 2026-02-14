@@ -17,7 +17,7 @@
 body,
 html,
 #root {
-  @apply bg-black;
+  @apply bg-(--grey950);
 }
 
 #root {
